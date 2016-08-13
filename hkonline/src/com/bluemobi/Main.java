@@ -13,5 +13,14 @@ public class Main {
 				System.out.println("你知道个毛");
 			}
 		}).start();
+		
+		new Thread(){
+			@Override
+			public void run() {
+				System.out.println("你碉堡了。。");
+			}
+		}.start();
 	}
+	
+	
 }
