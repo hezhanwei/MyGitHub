@@ -20,7 +20,7 @@ public class Main {
 				System.out.println("你碉堡了。。");
 			}
 		}.start();
+		
+		
 	}
-	
-	
 }
