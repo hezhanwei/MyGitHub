@@ -1,6 +1,19 @@
 package com.bluemobi;
 
 public class Main {
+	//add singleTon
+	private static Main main = null;
+	private Main(){}
+	public Main getInstance(){
+		if (main==null) {
+			synchronized (Main.class) {
+				if (main==null) {
+					main = new Main();
+				}
+			}
+		}
+		return main;
+	}
 
 	public static void main(String[] args) {
 		System.out.println("hello world");
